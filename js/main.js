@@ -1,6 +1,5 @@
 const clock = document.querySelector(".current-time");
-
-// currentTime.innerText = new Date().getHours().getMinutes();
+const apiResult = document.querySelector(".api-container")
 
 setInterval(showTime, 60000);
 function showTime() {
@@ -26,3 +25,28 @@ function showTime() {
   clock.innerText = currentTime;
 }
 showTime();
+
+// Source randome quotes from https://github.com/lukePeavey/quotable REST API
+const getData = async function () {
+  const res = await fetch(
+    "https://api.quotable.io/random"
+  );
+  const data = await res.json();
+  displayApiResponse(data);
+};
+
+// getData();
+const displayApiResponse = function (data) {
+  apiResult.innerText = `${data.content} — ${data.author}`;
+};
+
+getData();
+// Displays new quote once/day
+setInterval(getData, 86400000);
+// Displays new quote once/hour
+// setInterval(getData, 3600000);
+// Displays new quote once/minute
+// setInterval(getData, 60000);
+
+
+

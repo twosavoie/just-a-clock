@@ -248,17 +248,23 @@ footer p {
   }
 
   .current-time {
-    font-size: 70px;
+    font-size: 60px;
   }
 }
 
 @media (min-width: 768px) {
+  p,
+  li,
+  a {
+    font-size: 2rem;
+  }
+
   .content-wrapper {
     max-width: 75%;
   }
 
   .current-time {
-    font-size: 160px;
+    font-size: 130px;
   }
 
   .section-wrapper {
@@ -268,11 +274,11 @@ footer p {
 
 @media (min-width: 1180px) {
 
-  /* p,
+  p,
   li,
   a {
-    font-size: 1rem;
-  } */
+    font-size: 2.5rem;
+  }
 
   .current-time {
     font-size: 200px;
