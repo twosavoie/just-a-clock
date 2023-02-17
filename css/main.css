@@ -94,7 +94,9 @@ textarea {
   --button-color: #0A3B67;
   --secondary-color: #1477D1;
   --accent-color: #75cb00;
-  --text-color: #4C5D6C;
+    /* Since the text is so integral and minimal, changing the color to the primary color. Could also change to foreground-color */
+  --text-color: #4C5D6C; 
+  --text-color: #0A3B67;
   --strikeout-text-color: #b5b5b5;
   --border-top-accent-color: #75cb00;
   --border-bottom-accent-color: #447700;
@@ -133,7 +135,8 @@ figure {
   margin: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -200,22 +203,29 @@ button:hover {
 .content-wrapper {
   max-width: 1200px;
   width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .section-wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  width: 100%;
 }
 
 /* Main styles */
 main.flex-wrapper {
   height: 100vh;
 }
+
 /* Footer styles */
 footer.flex-wrapper {
   height: 20vh;
 }
+
 footer p {
   text-align: center;
   /* Removing to set vh */
@@ -233,27 +243,39 @@ footer p {
 }
 
 @media (min-width: 500px) {
+  .section-wrapper {
+    width: 45%;
+  }
+
   .current-time {
-    font-size: 150px;
+    font-size: 70px;
   }
 }
 
-@media (min-width: 730px) {
+@media (min-width: 768px) {
+  .content-wrapper {
+    max-width: 75%;
+  }
+
   .current-time {
     font-size: 160px;
+  }
+
+  .section-wrapper {
+    width: 100%;
   }
 }
 
 @media (min-width: 1180px) {
 
-  p,
+  /* p,
   li,
   a {
     font-size: 1rem;
-  }
+  } */
 
   .current-time {
-    font-size: 250px;
+    font-size: 200px;
   }
 
 }
