@@ -35,7 +35,6 @@ const getData = async function () {
   displayApiResponse(data);
 };
 
-// getData();
 const displayApiResponse = function (data) {
   apiResult.innerText = `${data.content} — ${data.author}`;
 };

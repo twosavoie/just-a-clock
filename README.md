@@ -14,4 +14,4 @@ If you're interested in the process of building this site, you can read [my blog
 Hope you find it helpful. If you do, I would appreciate it if you would leave me a star. ⭐ Stay tuned for updates! 🙂
 
 [1]: https://github.com/lukePeavey/quotable
-[2]: 
+[2]: https://lscodes.com/building-a-series-of-clocks/
