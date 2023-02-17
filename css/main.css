@@ -88,7 +88,8 @@ textarea {
    ========================================================================== */
 :root {
   --header-font: 'Work Sans', sans-serif;
-  --list-item-font: 'Solitreo', cursive;
+  --header-font: 'Rubik', sans-serif;
+  --primary-font: 'Oswald', sans-serif;
   --primary-color: #0A3B67;
   --button-color: #0A3B67;
   --secondary-color: #1477D1;
@@ -132,6 +133,10 @@ figure {
   margin: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 /* Frequently used styles */
 body {
   background: var(--background-color);
@@ -148,6 +153,11 @@ button {
 
 button {
   color: var(--button-color);
+}
+
+.current-time {
+  font-size: 72px;
+  margin: 0;
 }
 
 /* I prefer a larger font size on mobile, and usually tablet. Reduce to 1rem on desktop */
@@ -184,6 +194,7 @@ button:hover {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  align-items: center;
 }
 
 .content-wrapper {
@@ -194,11 +205,22 @@ button:hover {
 .section-wrapper {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
+/* Main styles */
+main.flex-wrapper {
+  height: 80vh;
+}
 /* Footer styles */
-.copyright-image {
-  padding-bottom: 2px;
+footer.flex-wrapper {
+  height: 20vh;
+}
+footer p {
+  text-align: center;
+  /* Removing to set vh */
+  /* padding-bottom: 40px; */
+  margin: 0;
 }
 
 .site-link {
@@ -206,16 +228,32 @@ button:hover {
   border-bottom: 1px solid var(--accent-color);
 }
 
-@media (min-width: 768px) {
-
+.copyright-image {
+  padding-bottom: 2px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 500px) {
+  .current-time {
+    font-size: 100px;
+  }
+}
+
+@media (min-width: 730px) {
+  .current-time {
+    font-size: 140px;
+  }
+}
+
+@media (min-width: 1180px) {
 
   p,
   li,
   a {
     font-size: 1rem;
+  }
+
+  .current-time {
+    font-size: 200px;
   }
 
 }

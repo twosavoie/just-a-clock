@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Clock</title>
 
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- https://websitemetadata.com/meta-tags-generator -->
+  <!-- https://websitemetadata.com/meta-tags-generator -->
   <meta property="og:title" content="">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
@@ -19,6 +19,16 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Solitreo&family=Work+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -29,16 +39,20 @@
 
   </header>
 
-  <main>
-
+  <main class="flex-wrapper">
+    <div class="content-wrapper">
+      <section class="section-wrapper">
+        <p class="current-time"></p>
+      </section>
+    </div>
   </main>
 
   <footer class="flex-wrapper">
     <div class="content-wrapper">
       <p>Copyright
         <script>document.write(new Date().getFullYear())</script> | <a href="https://lscodes.com/" target="_blank"
-          class="site-link">Lisa Savoie</a> <img src="img/favicon.png"
-          alt="LS Codes logo" width="16px" class="copyright-image">
+          class="site-link">Lisa Savoie</a> <img src="img/favicon.png" alt="LS Codes logo" width="16px"
+          class="copyright-image">
       </p>
     </div>
   </footer>
