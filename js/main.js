@@ -26,7 +26,7 @@ function showTime() {
 }
 showTime();
 
-// Source randome quotes from https://github.com/lukePeavey/quotable REST API
+// Source random quotes from https://github.com/lukePeavey/quotable REST API
 const getData = async function () {
   const res = await fetch(
     "https://api.quotable.io/random"
