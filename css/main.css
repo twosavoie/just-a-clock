@@ -217,19 +217,19 @@ button:hover {
 }
 
 /* Main styles */
+/* Might need to make an adjustment for vh if bottom is being cut off in Safari mobile. Might change to 100% instead. Other options available. */
 main.flex-wrapper {
   height: 100vh;
 }
 
+/* No footer in this version */
 /* Footer styles */
-footer.flex-wrapper {
+/* footer.flex-wrapper {
   height: 20vh;
 }
 
 footer p {
   text-align: center;
-  /* Removing to set vh */
-  /* padding-bottom: 40px; */
   margin: 0;
 }
 
@@ -240,7 +240,7 @@ footer p {
 
 .copyright-image {
   padding-bottom: 2px;
-}
+} */
 
 @media (min-width: 500px) {
   .section-wrapper {
