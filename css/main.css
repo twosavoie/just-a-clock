@@ -87,8 +87,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 :root {
-  --header-font: 'Work Sans', sans-serif;
-  --header-font: 'Rubik', sans-serif;
+  --header-font: 'Lemon', cursive;
+  /* --header-font: 'Oswald', sans-serif; */
   --primary-font: 'Oswald', sans-serif;
   --primary-color: #0A3B67;
   --button-color: #0A3B67;
@@ -156,7 +156,7 @@ button {
 }
 
 .current-time {
-  font-size: 80px;
+  font-size: 55px;
   margin: 0;
 }
 
@@ -165,9 +165,14 @@ p,
 li,
 a {
   font-family: var(--header-font);
-  color: var(--text-color);
+  /* color: var(--text-color); */
   font-size: 1.25rem;
   line-height: 2;
+  font-weight: bold;
+  background: -webkit-linear-gradient(pink, rgb(155, 60, 92), pink);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 a:hover {
@@ -234,13 +239,13 @@ footer p {
 
 @media (min-width: 500px) {
   .current-time {
-    font-size: 150px;
+    font-size: 100px;
   }
 }
 
 @media (min-width: 730px) {
   .current-time {
-    font-size: 160px;
+    font-size: 120px;
   }
 }
 
@@ -253,7 +258,7 @@ footer p {
   }
 
   .current-time {
-    font-size: 250px;
+    font-size: 200px;
   }
 
 }
