@@ -222,6 +222,10 @@ main.flex-wrapper {
   height: 100vh;
 }
 
+.right-side {
+  border-bottom: 2px solid var(--accent-color);
+}
+
 /* No footer in this version */
 /* Footer styles */
 /* footer.flex-wrapper {
@@ -245,6 +249,12 @@ footer p {
 @media (min-width: 500px) {
   .section-wrapper {
     width: 45%;
+    width: 48%;
+  }
+  
+  .right-side {
+    border-right: 2px solid var(--accent-color);
+    border-bottom: none;
   }
 
   .current-time {
@@ -257,6 +267,11 @@ footer p {
   li,
   a {
     font-size: 2rem;
+  }
+
+  .right-side {
+    border-right: none;
+    border-bottom: 2px solid var(--accent-color);
   }
 
   .content-wrapper {
